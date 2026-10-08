@@ -1,0 +1,62 @@
+# ====================================================================
+# Git Ignore Configuration - Siemens S7 C# HMI / SCADA (Project 007/2025)
+# ====================================================================
+
+# 1. Siemens TIA Portal Engineering Projects & Blobs (Explicitly Excluded)
+TIA/
+*.ap19
+*.ap18
+*.ap17
+*.ap16
+*.ap15
+*.zal19
+*.zal18
+*.pe5
+*.plcsim*
+*.backup
+
+# 2. Visual Studio & Rider IDE Cache / Local User Settings
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.launch
+*.DotSettings.user
+
+# 3. Build Outputs & Intermediate Files
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+[Bb]uild/
+
+# 4. NuGet Packages & Cache
+**/packages/*
+!**/packages/build/
+*.nupkg
+*.snupkg
+.nuget/
+
+# 5. OS & System Artifacts
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# 6. Sensitive & Local Override Configurations
+*.local.config
+app.local.config
+secrets.json
+*.pfx
+*.key
